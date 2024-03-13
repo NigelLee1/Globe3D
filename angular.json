@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/globe3-d",
+            "outputPath": "dist/Globe3D",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
