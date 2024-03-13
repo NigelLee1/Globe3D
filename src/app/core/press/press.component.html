@@ -1,0 +1,4 @@
+<div class="press">
+  <span class = "back_tip" [class.is-active]="showBackTip"></span>
+  <span class="press_btn" [class.is-active]="showPressButton" (touchstart)="touchStart()" (touchend)="touchEnd()" (touchcancel)="touchEnd()"></span>
+</div>

@@ -1,0 +1,14 @@
+<div class="core">
+    <app-music #music></app-music>
+    <app-box [show] = "showCover" [showCoord] = "showCoord" [coordIndex]="coordIndex" (onKnowMore)="handleKnowMore()"></app-box>
+    <app-banner *ngIf="showBannerLayer" (emitter)="handleBack()"></app-banner>
+    <app-earth #earth [hidden]="!showEarth" [bannerActive] = "showBannerLayer"></app-earth>
+    <app-cloud #cloudSprite [show] = "showCloudLayer"></app-cloud>
+    <app-video #videoPlay [show] = "showVideoLayer"></app-video>
+
+    <app-press
+                    [showPressButton]="showPressButton"
+                    [showBackTip]="showBackTip"
+                    (onPressDown)="handleHold()"
+                    (onPressEnd)="handleRelease()"></app-press>
+</div>

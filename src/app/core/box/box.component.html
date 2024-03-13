@@ -1,0 +1,8 @@
+<div @fade *ngIf="show" class="box">
+  <div class="box_cover"></div>
+  <div class="box_tips"  [ngClass]="{'is-active': showTips}">
+    <div class="box_hand"></div>
+  </div>
+  <span class="box_action_tip" [class.is-active] = "showTips" ></span>
+  <span class = "box_action_more" [class.is-active] = "showTips" (click)="knowMore()"></span>
+</div>

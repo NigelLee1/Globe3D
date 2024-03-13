@@ -1,0 +1,65 @@
+.press {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.press_btn {
+  position: absolute;
+  display: inline-block;
+  left: 138px;
+  bottom: 30px;
+  width: 99px;
+  height: 133px;
+  opacity: 0;
+  background-image: url(/assets/images/btn_show.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 2s ease;
+  pointer-events: auto;
+}
+
+.press_btn.is-active{
+  opacity: 1;
+  animation: twinkle 2s linear infinite;
+}
+
+.back_tip {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height:35px;
+  opacity: 0;
+  margin: -280px 0 0 -65px;
+  background-image: url(/assets/images/back_tip.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 2s ease;
+}
+
+.back_tip.is-active{
+  opacity: 1;
+  animation: twinkle 1s linear infinite;
+}
+
+
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
