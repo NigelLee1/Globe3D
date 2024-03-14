@@ -16,7 +16,7 @@
   width: 375px;
   height: 600px;
   margin: -300px 0 0 -187.5px;
-  background-image: url(/assets/images/bg_index_cover.png);
+  background-image: url(../../../assets/images/bg_index_cover.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -28,7 +28,7 @@
   width: 325px;
   height: 89px;
   margin: -35px 0 0 -162.5px;
-  background-image: url(/assets/images/bg_tips.png);
+  background-image: url(../../../assets/images/bg_tips.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
   width: 16px;
   height: 19px;
   margin-left: -8px;
-  background-image: url(/assets/images/hand.png);
+  background-image: url(../../../assets/images/hand.png);
   background-size: cover;
   animation: moveHand 2s linear infinite;
 }
@@ -58,7 +58,7 @@
   height: 18px;
   margin: -253px 0 0 -58.5px;
   background-size: 124px 95px;
-  background-image: url(/assets/images/bg_coord.png);
+  background-image: url(../../../assets/images/bg_coord.png);
   background-repeat: no-repeat;
   transition: all .5s ease;
 }
