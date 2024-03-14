@@ -133,8 +133,6 @@ class ZoomingState extends InteractionState {
     super(controller)
     this._direction = '';
     this._tween = null
-    // controller.hideCloud();
-    // controller.showEarth();
   }
 
   _setDirection(direction: string) {
@@ -205,7 +203,7 @@ class ZoomingState extends InteractionState {
  * Backward: from current frame index to the beginning of the frame index, once reach the beginning, go to the previous state, which is DivingState
  */
 class DivingState extends InteractionState {
-  private _direction: string = 'forward';
+  private _direction!: string;
   constructor(controller: Controller) {
     super(controller)
     controller.hideVideo();
